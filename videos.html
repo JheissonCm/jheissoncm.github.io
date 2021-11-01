@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<!--Navegador-->
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="index.html"><img src="images/logo-taller-01.svg" alt="Logo"></a></div>
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul id="cd-navigation">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+      <li><a href="servicios.html">Contáctanos</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<!--Videos-->
+<h1>Videos de Referencia</h1>
+<div class="videoyou">
+  <div class="videos">
+    <iframe width="426" height="240" src="https://www.youtube.com/embed/bp0zl_D5zHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="videos">
+    <iframe width="426" height="240" src="https://www.youtube.com/embed/3vP3SifL4D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="videos">
+    <iframe width="426" height="240" src="https://www.youtube.com/embed/zEkSvNb7Djc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!--Javascript-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<!--Footer-->
+<footer>
+  <div class="footer_c">
+      <h1>Contáctanos</h1>
+      <ul>
+          <li><strong>Celular:</strong> +57 310 374 4742</li>
+          <li><strong>Teléfono:</strong> +57 (604) 537 4403</li>
+          <li><strong>E-mail:</strong> autocarinjeccionsas@gmail.com</li>
+      </ul>
+  </div>
+
+  <div class="logo_footer">
+      <img src="images/logo_taller.png" alt="Logo Autocar">
+  </div>
+
+  <div class="footer_2">
+      <h1>Quiénes somos</h1>
+      <p>
+          Somos una empresa dedicada al cuidado <br>y mantenimiento de tu carro.
+      </p>
+  </div>
+</footer>
+<!--Fin Footer-->
+
+</body>
+</html>

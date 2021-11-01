@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<!--Navegador-->
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="index.html"><img src="images/logo-taller-01.svg" alt="Logo"></a></div>
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul id="cd-navigation">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+      <li><a href="servicios.html">Contáctanos</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/carro-1.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/carro-9.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<!--Javascript-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+<!--Servicios-->
+<!--Contenedor Cards-->
+<h1>Portafolio de Servicios</h1>
+
+<section class="contenedor">
+
+    <!--Card 1-->
+    <article class="card_1">
+        <img src="images/scanner.png" alt="Scanner">
+        <div class="txt">
+            <h2>Scanner todo carro</h2>
+            <p>
+                Diagnosticamos las fallas electrónicas de tu auto, específicamente las almacenadas en la computadora del mismo.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+
+    <!--Card 2-->
+    <article class="card_1">
+        <img src="images/ultrasonido.png" alt="Laboratorio inyection">
+        <div class="txt">
+            <h2>Laboratorio ultrasonido</h2>
+            <p>
+                Realizamos una limpieza simultánea en varios inyectores y eliminamos completamente los depósitos de carbón que allí se almacenan.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+
+    <!--Card 3-->
+    <article class="card_1">
+        <img src="images/gases.png" alt="Analizador de gases">
+        <div class="txt">
+            <h2>Analizador de gases</h2>
+            <p>
+                Detectamos posibles fallas en la quema de combustible y evaluamos la cantidad de emisiones de gases que está produciendo el vehículo.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+</section>
+
+<section class="contenedor">
+
+    <!--Card 4-->
+    <article class="card_1">
+        <img src="images/repuestos.png" alt="Repuestos">
+        <div class="txt">
+            <h2>Repuestos originales</h2>
+            <p>
+                Contamos con los mejores proveedores para la venta y compra de repuestos originales con la mejor garantía del mercado.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+
+    <!--Card 5-->
+    <article class="card_1">
+        <img src="images/laboratorio.png" alt="Laboratorio de gas">
+        <div class="txt">
+            <h2>Laboratorio de gases</h2>
+            <p>
+                Poseemos la acreditación necesaria para garantizar que los procedimientos sean 100% correctos y se apliquen de acuerdo a la norma.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+
+    <!--Card 6-->
+    <article class="card_1">
+        <img src="images/desvare.png" alt="Desvare">
+        <div class="txt">
+            <h2>Desvare a domicilio</h2>
+            <p>
+                Enviamos un mecánico con la herramienta necesaria para suplir las necesidades básicas al momento en que tu vehículo quede varado.
+            </p>
+        </div>
+        <div class="wpp">
+            <a href="#"><img src="images/icono_wpp.png" alt="Wpp"> Contáctanos</a>
+        </div>
+    </article>
+</section>
+
+<!--Footer-->
+<footer>
+  <div class="footer_c">
+      <h1>Contáctanos</h1>
+      <ul>
+          <li><strong>Celular:</strong> +57 310 374 4742</li>
+          <li><strong>Teléfono:</strong> +57 (604) 537 4403</li>
+          <li><strong>E-mail:</strong> autocarinjeccionsas@gmail.com</li>
+      </ul>
+  </div>
+
+  <div class="logo_footer">
+      <img src="images/logo_taller.png" alt="Logo Autocar">
+  </div>
+
+  <div class="footer_2">
+      <h1>Quiénes somos</h1>
+      <p>
+          Somos una empresa dedicada al cuidado <br>y mantenimiento de tu carro.
+      </p>
+  </div>
+</footer>
+<!--Fin Footer-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
